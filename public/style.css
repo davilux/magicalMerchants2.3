@@ -1,0 +1,216 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  color: #8d5a97ff;
+}
+
+a {
+  text-decoration: none;
+  color: #8d5a97ff;
+}
+
+label {
+  display: block;
+}
+
+form div {
+  margin: 1em;
+  display: inline-block;
+}
+
+img {
+  height: 300px;
+  width: 300px;
+}
+
+#navbar {
+  background-color: #37908f;
+}
+
+/* !!! NAMING CONVENTION !!! We have agreed that all flexbox class names begin with the name of the react component! For example, the allProducts classes will start with .allproducts such as: .allproducts-container */
+
+/* CSS HEX
+--non-photo-blue: #a3e7fcff;
+--ocean-green: #26c485ff;
+--viridian-green: #32908fff;
+--french-lilac: #8d5a97ff;
+--mountbatten-pink: #907f9fff; */
+
+.pageheader {
+  color: #8d5a97ff;
+  padding: 30px 10px 10px 30px;
+  font-size: 42px;
+  text-transform: capitalize;
+}
+
+/* NAVBAR COMPONENT: */
+
+.navbar-wrapper-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.navbar-wrapper-container * {
+  /* text-transform: uppercase; */
+  color: #fff;
+}
+
+.navbar-links-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.navbar-links-container * {
+  padding: 10px;
+}
+
+.navbar-links-container h1 {
+  text-transform: capitalize;
+}
+
+.cartIcon {
+  width: 30px;
+  height: auto;
+  padding: 0px;
+  margin: 0px;
+}
+
+/* ALL PRODUCTS COMPONENT: */
+
+.allproducts-wrapper-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.allproducts-options-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+.allproducts-product-list-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.allproducts-product-list-item * {
+  padding: 10px;
+}
+
+.allproducts-product-list-item h3 {
+  text-transform: capitalize;
+}
+
+.allproducts-product-list-item span {
+  text-transform: capitalize;
+}
+
+.allproducts-product-list-item button {
+  text-transform: uppercase;
+}
+
+.allproducts-individual-product-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.allproducts-price-and-stock-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+
+/* SINGLE PRODUCT COMPONENT: */
+
+.singleproduct-wrapper-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.singleproduct-wrapper-item {
+  max-width: 1000px;
+}
+
+.singleproduct-wrapper-item p {
+  padding: 50px;
+}
+
+.singleproduct-wrapper-item h1 {
+  text-transform: capitalize;
+}
+
+.singleproduct-images-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.singleproduct-images-container img {
+  width: 560px;
+  height: 560px;
+}
+
+.singleproduct-price-qty-button-container {
+  width: 560px;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+}
+.singleproduct-price-qty-button-container p {
+  padding: 10px;
+}
+
+/* CART COMPONENT: */
+
+/* * {
+  border: 1px solid black;
+} */
+
+.cart-container {
+  padding: 10px;
+}
+
+.cart-single-item-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.cart-single-item-container * {
+  padding: 10px;
+}
+
+.cart-product-title {
+  text-transform: capitalize;
+}
+
+/* UPDATE PRODUCT COMPONENT: */
+.update-single-product * {
+  padding: 10px;
+}
+
+/* NEW PRODUCT COMPONENT: */
+.new-product-form-container * {
+  padding: 10px;
+}
